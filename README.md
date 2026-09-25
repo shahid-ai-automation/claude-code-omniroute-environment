@@ -31,11 +31,12 @@ Windows Login
 - OmniRoute
 - Claude Code
 - Antigravity provider
-- Claude Sonnet 4.6
+- Verified model profile: agy/claude-sonnet-4-6
 
 ## Verification
 
 The environment can be verified from Claude Code using /status.
+The current verified configuration routes Claude Code through the Antigravity provider using the `agy/claude-sonnet-4-6` model profile. This project does not require a direct Anthropic API connection for the documented setup.
 
 Expected routing path:
 
@@ -43,7 +44,7 @@ Claude Code -> OmniRoute (localhost:20128) -> Provider -> Available Free Model
 
 Current verified example:
 
-Claude Code -> OmniRoute -> Antigravity -> Claude Sonnet 4.6
+Claude Code -> OmniRoute -> Antigravity provider -> agy/claude-sonnet-4-6
 
 ## Security
 
