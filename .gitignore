@@ -1,0 +1,17 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# OmniRoute local data
+*.sqlite
+*.sqlite3
+.omniroute/
+
+# Claude local configuration
+.claude/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
