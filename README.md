@@ -1,22 +1,23 @@
 ﻿# Claude Code + OmniRoute Environment
 
-A Windows-based development environment that routes Claude Code through OmniRoute and an Antigravity provider to Claude Sonnet 4.6, with automatic startup after Windows login.
+A Windows-based development environment for running Claude Code through legitimately available free model access from supported providers, using OmniRoute as the local routing layer. The goal is to make Claude Code usable with available free model capacity without requiring a direct paid model API connection.
 
 ## Architecture
 
 Windows Login
 -> Startup Launcher
--> OmniRoute
--> Antigravity Provider
--> Claude Sonnet 4.6
 -> Claude Code
+-> OmniRoute
+-> Provider
+-> Available Free Model
 
 ## What This Project Demonstrates
 
 - Claude Code integration with a local AI gateway
+- Access to available free models from supported providers
 - Model routing through OmniRoute
 - Antigravity provider configuration
-- Claude Sonnet 4.6 as the active development model
+- Provider/model abstraction so the active free model can be changed without rebuilding the development workflow
 - Windows startup automation
 - Health-check based service readiness
 - Reproducible local development setup
@@ -38,7 +39,11 @@ The environment can be verified from Claude Code using /status.
 
 Expected routing path:
 
-Claude Code -> OmniRoute (localhost:20128) -> Antigravity -> Claude Sonnet 4.6
+Claude Code -> OmniRoute (localhost:20128) -> Provider -> Available Free Model
+
+Current verified example:
+
+Claude Code -> OmniRoute -> Antigravity -> Claude Sonnet 4.6
 
 ## Security
 
@@ -56,3 +61,5 @@ Review .gitignore before committing or publishing changes.
 ## Status
 
 This repository documents a working local Claude Code development environment with OmniRoute routing, Antigravity provider integration, Claude Sonnet 4.6, and Windows startup automation.
+
+
