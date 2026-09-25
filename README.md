@@ -9,7 +9,7 @@ Windows Login
 -> Claude Code
 -> OmniRoute
 -> Provider
--> Available Free Model
+-> Available Model
 
 ## What This Project Demonstrates
 
@@ -17,7 +17,7 @@ Windows Login
 - Access to available free models from supported providers
 - Model routing through OmniRoute
 - Antigravity provider configuration
-- Provider/model abstraction so the active free model can be changed without rebuilding the development workflow
+- Provider/model abstraction so the active model can be changed without rebuilding the development workflow
 - Windows startup automation
 - Health-check based service readiness
 - Reproducible local development setup
@@ -40,7 +40,7 @@ The current verified configuration routes Claude Code through the Antigravity pr
 
 Expected routing path:
 
-Claude Code -> OmniRoute (localhost:20128) -> Provider -> Available Free Model
+Claude Code -> OmniRoute (localhost:20128) -> Provider -> Available Model
 
 Current verified example:
 
