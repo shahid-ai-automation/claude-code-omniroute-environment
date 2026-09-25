@@ -2,7 +2,7 @@
 
 ## System Flow
 
-Windows Login -> Startup Launcher -> Claude Code -> OmniRoute -> Provider -> Available Free Model
+Windows Login -> Startup Launcher -> Claude Code -> OmniRoute -> Provider -> Available Model
 
 ## Components
 
@@ -26,7 +26,7 @@ Claude Code remains the development interface while OmniRoute handles the routin
 
 ## Request Path
 
-Claude Code -> OmniRoute -> Provider -> Available Free Model
+Claude Code -> OmniRoute -> Provider -> Available Model
 
 ## Readiness Check
 
